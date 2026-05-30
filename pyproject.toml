@@ -1,0 +1,45 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "miscai"
+version = "0.1.0"
+description = "Miscellaneous differnet AI tools for embedding into projects."
+readme = "README.md"
+requires-python = ">=3.14"
+license = { file = "LICENSE" }
+
+# Optional component dependencies
+[project.optional-dependencies]
+dlm = [
+    "chromadb>=1.5.2",
+    "torch>=2.10.0",
+    "transformers>=4.57.3",
+    "requests>=2.34.2",
+    "peft>=0.19.1",
+]
+llm = [
+    "chromadb>=1.5.2",
+    "torch>=2.10.0",
+    "transformers>=4.57.3",
+    "ollama>=0.6.1",
+    "peft>=0.19.1",
+]
+stt = [
+    "numpy>=2.4.6",
+    "pywhispercpp>=1.4.1",
+]
+tts = [
+    "numpy>=2.4.6",
+    "pocket-tts>=1.1.1",
+    "scipy>=1.17.1",
+]
+vad = [
+    "torch>=2.10.0",
+    "torchaudio>=2.10.0",
+    "numpy>=2.4.6",
+]
+wake = [
+    "local-wake>=0.1.1",
+]
