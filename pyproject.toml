@@ -10,6 +10,11 @@ readme = "README.md"
 requires-python = ">=3.14"
 license = { file = "LICENSE" }
 
+[project.urls]
+Homepage = "https://github.com/pui4/miscai"
+Changelog = "https://github.com/pui4/miscai/releases"
+Repository = "https://github.com/pui4/miscai.git"
+
 # Optional component dependencies
 [project.optional-dependencies]
 dlm = [
